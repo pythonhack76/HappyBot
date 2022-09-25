@@ -14,8 +14,17 @@ export class ContactComponent implements OnInit {
   constructor(private servizioTest: ServizioTestService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-   this.persone = this.servizioTest.getPersone() 
-   this.isProfile = !this.route.snapshot.paramMap.get('id') ? false : true
+  //  this.persone = this.servizioTest.getPersone() 
+  //  this.isProfile = !this.route.snapshot.paramMap.get('id') ? false : true
+   if(this.route.snapshot.paramMap.get('id')){
+    this.isProfile = true
+    this.persone = this.servizioTest.getPersona(parseInt(this.route.snapshot.paramMap.get('id')!)) 
+
+   }else {
+    this.isProfile = false
+    this.persone = this.servizioTest.getPersone() 
+   }
+
    console.log(this.route.snapshot.paramMap.get('id'))
    console.log(this.isProfile)
   }
