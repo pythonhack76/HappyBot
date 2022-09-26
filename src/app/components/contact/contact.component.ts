@@ -9,6 +9,7 @@ import { ServizioTestService } from 'src/app/service/servizio-test.service';
 })
 export class ContactComponent implements OnInit {
   persone: any
+  persona: any
   isProfile: boolean
 
   constructor(private servizioTest: ServizioTestService, private route: ActivatedRoute) { }
@@ -16,17 +17,17 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   //  this.persone = this.servizioTest.getPersone() 
   //  this.isProfile = !this.route.snapshot.paramMap.get('id') ? false : true
-   if(this.route.snapshot.paramMap.get('id')){
-    this.isProfile = true
-    this.persone = this.servizioTest.getPersona(parseInt(this.route.snapshot.paramMap.get('id')!)) 
-
-   }else {
-    this.isProfile = false
-    this.persone = this.servizioTest.getPersone() 
+   
+   
+   
+   
+  //  }else {
+    // this.isProfile = false
+    // this.persone = this.servizioTest.getPersone() 
    }
 
-   console.log(this.route.snapshot.paramMap.get('id'))
-   console.log(this.isProfile)
-  }
+  //  console.log(this.route.snapshot.paramMap.get('id'))
+  //  console.log(this.isProfile)
+   
 
 }

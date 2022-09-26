@@ -17,6 +17,7 @@ import { ServiziComponent } from './components/servizi/servizi.component';
 import { PartnersComponent } from './components/partners/partners.component';
 import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ContattoComponent } from './components/contatto/contatto.component';
 
 
 
@@ -31,7 +32,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     ServiziComponent,
     PartnersComponent,
     HomeComponent,
-    DashboardComponent
+    DashboardComponent,
+    ContattoComponent
   ],
   imports: [
     BrowserModule,
