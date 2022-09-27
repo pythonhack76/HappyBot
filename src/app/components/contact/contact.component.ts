@@ -10,12 +10,12 @@ import { ServizioTestService } from 'src/app/service/servizio-test.service';
 export class ContactComponent implements OnInit {
   persone: any
   persona: any
-  isProfile: boolean
+  //isProfile: boolean
 
-  constructor(private servizioTest: ServizioTestService, private route: ActivatedRoute) { }
+  constructor(private servizioTest: ServizioTestService) { }
 
   ngOnInit(): void {
-  //  this.persone = this.servizioTest.getPersone() 
+   this.persone = this.servizioTest.getPersone() 
   //  this.isProfile = !this.route.snapshot.paramMap.get('id') ? false : true
    
    

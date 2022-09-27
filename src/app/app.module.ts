@@ -18,6 +18,7 @@ import { PartnersComponent } from './components/partners/partners.component';
 import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ContattoComponent } from './components/contatto/contatto.component';
+import { NotfoundComponent } from './components/notfound/notfound.component';
 
 
 
@@ -33,7 +34,8 @@ import { ContattoComponent } from './components/contatto/contatto.component';
     PartnersComponent,
     HomeComponent,
     DashboardComponent,
-    ContattoComponent
+    ContattoComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
