@@ -9,6 +9,8 @@
     <input type="radio" name="coloreEvidenziatore" (click)="cambiaColoreEvidenziatore('green')">verde
 
 </div>
-<p [appHightlight]="colore"> una linea di testo </p>
+<p [appHightlight]="colore" defaultColor="black"> una linea di testo </p>
+<p [appHightlight]="colore" defaultColor="purple"> una linea di testo </p>
+<p [appHightlight]="colore" defaultColor="orange"> una linea di testo </p>
 
 <router-outlet></router-outlet>

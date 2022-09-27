@@ -8,7 +8,7 @@ import { ServizioTestService } from './service/servizio-test.service';
 })
 export class AppComponent implements OnInit {
 
-  colore = 'red'
+  colore = ''
   
   
   title = 'HappyBot';
