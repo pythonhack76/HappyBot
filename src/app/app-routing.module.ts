@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './auth/auth.guard';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ContattoComponent } from './components/contatto/contatto.component';
@@ -12,7 +13,7 @@ const routes: Routes = [
   { path: '', pathMatch:'full', redirectTo: '/homepage' },
   { path: 'homepage', component: HomeComponent },
   { path: 'about', component: AboutComponent  },
-  { path: 'contatti', component: ContactComponent, children: [
+  { path: 'contatti', component: ContactComponent, canActivate:[AuthGuard], canActivateChild:[AuthGuard], children: [
     {path: ':id', component: ContattoComponent},
   ]  },
  

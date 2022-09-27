@@ -2,7 +2,13 @@
 <a routerLink="/" style="margin-right:10px">Home</a>
 <a routerLink="/about" style="margin-right:10px">About</a>
 <a routerLink="/contatti" style="margin-right:10px">Contatti</a>
+<h2>scegli il colore:</h2>
+<div>
+    <input type="radio" name="coloreEvidenziatore" (click)="cambiaColoreEvidenziatore('red')">Rosso
+    <input type="radio" name="coloreEvidenziatore" (click)="cambiaColoreEvidenziatore('yellow')">Giallo
+    <input type="radio" name="coloreEvidenziatore" (click)="cambiaColoreEvidenziatore('green')">verde
 
-
+</div>
+<p [appHightlight]="colore"> una linea di testo </p>
 
 <router-outlet></router-outlet>

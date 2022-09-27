@@ -7,7 +7,8 @@ import { ServizioTestService } from './service/servizio-test.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  
+
+  colore = 'red'
   
   
   title = 'HappyBot';
@@ -19,6 +20,13 @@ export class AppComponent implements OnInit {
   isOver = true; 
   isOut = false; 
   isWorking = true; 
+
+
+  cambiaColoreEvidenziatore(colore: string){
+
+    this.colore = colore
+
+  }
 
 
   onShow() {
