@@ -12,16 +12,23 @@ export class HomeComponent implements OnInit {
   sottoscrizione: any
   ngOnInit(): void {
 
-       this.sottoscrizione = interval(1000).subscribe(numero => {
-      console.log(numero)
-    })
+      //  this.sottoscrizione = interval(1000).subscribe(numero => {
+      // console.log(numero)
+    // })
+
+    
   }
 
-    ngOnDestroy(): void {
-      //Called once, before the instance is destroyed.
-      //Add 'implements OnDestroy' to the class.
-      this.sottoscrizione.unsubscribe()
-    }
+  onSubmit(form: any){
+    console.log('eccomi');
+
+  }
+
+    // ngOnDestroy(): void {
+      // Called once, before the instance is destroyed.
+      // Add 'implements OnDestroy' to the class.
+      // this.sottoscrizione.unsubscribe()
+    // }
    
 
     // new Observable(observer => {
