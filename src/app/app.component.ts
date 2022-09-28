@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { interval, Observable } from 'rxjs';
 import { ServizioTestService } from './service/servizio-test.service';
 
 @Component({
@@ -41,6 +42,13 @@ export class AppComponent implements OnInit {
 
 
   ngOnInit(): void {
-   console.log('appcomponent ', this.servizioTest.getPersone())
+// 
+
+   
+   
+   
+   
+   
+   
   }
 }
