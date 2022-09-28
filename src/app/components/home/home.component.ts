@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { interval } from 'rxjs/internal/observable/interval';
 
 @Component({
@@ -19,8 +20,8 @@ export class HomeComponent implements OnInit {
     
   }
 
-  onSubmit(form: any){
-    console.log('eccomi');
+  onSubmit(form: NgForm){
+    console.log(form);
 
   }
 
